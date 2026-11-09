@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kv-cache-sim"
+version = "0.1.0"
+description = "Transformer の KV キャッシュ使用量シミュレータ (MHA / GQA / MQA / MLA)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+kv-cache-sim = "kv_cache_sim.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
